@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical DOcumentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="doc-page">
+    <header id="header">
+        <h1 class="title">Getting Started with Git</h1>
+        <nav id="main-navigation">
+            <ul class="topics">
+                <li><a href="#introduction" class="t-link">Introduction</a></li>
+                <li><a href="#installation" class="t-link">Installation</a></li>
+                <li><a href="#basic-commands" class="t-link">Basic Commands</a></li>
+                <li><a href="#branching" class="t-link">Branching</a></li>
+                <li><a href="#contributing" class="t-link">Contributing</a></li>
+                <li><a href="#resources" class="t-link">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main id="content">
+        <section id="introduction" class="section">
+            <h2 class="section-title">Introduction</h2>
+            <p>Git is a distributed version control system that helps developers track changes in their codebase. Unlike traditional version control systems, 
+                Git allows multiple developers to work on a project simultaneously without interfering with each other's work. It records changes, 
+                keeps a history of modifications, and makes it easy to collaborate and merge updates.
+            </p>
+            <p>Created by Linus Torvalds in 2005, Git has become the most widely used version control system, supporting projects of all sizes. 
+                Whether you are a solo developer or part of a large team, Git enables efficient collaboration and code management.
+            </p>
+        </section>
+
+        <section id="installation" class="section">
+            <h2 class="section-title">Installation</h2>
+            <p>Follow the instructions depending on which operating system you are using:</p>
+            <ul>
+                <li><strong>Windows:</strong> Download and install from <a href="https://git-scm.com/download/win" class="link">git-scm.com</a></li>
+                <li><strong>Linux:</strong> Use your package manager <code>sudo apt install git</code> (Debian/Ubuntu).</li>
+                <li><strong>macOS:</strong> Install using Homebrew <code>brew install git</code>.</li>
+            </ul>
+            <a href="https://git-scm.com" class="button">Get Started with Git</a>
+            
+        </section>
+
+        <section id="basic-commands" class="section">
+            <h2 class="section-title">Basic Commands</h2>
+            <p>Git Commands:</p>
+            <ul>
+                <li><code>git init</code> - Initialize a new Git repository.</li>
+                <li><code>git clone [url]</code> - Clones the repository into the desired directory.</li>
+                <li><code>git add [file]</code> - Stages a specific file for the next commit.</li>
+                <li><code>git add .</code> - Stages the whole folder for the next commit</li>
+                <li><code>git commit -m "description"</code> - Commits staged changes with user description or message</li>
+                <li><code>git push</code> - Pushes changes to a remote repository</li>
+            </ul>
+            <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git" class="button">Basic Commands</a>
+        </section>
+
+        <section id="branching" class="section">
+            <h2 class="section-title">Branching</h2>
+            <p>Branches allow you to develop features, fix bugs, or safely experiment with new ideas in a contained area of your repository. 
+                You always create a branch from an existing branch. Typically, you might create a new branch from the default branch of your repository.
+            </p>
+            <ul>
+                <li><code>git branch [branch-name]</code> - Creates a new branch.</li>
+                <li><code>git checkout [branch-name]</code> - Switches to the specified branch.</li>
+                <li><code>git merge [branch-name]</code> - Merges changes from the selected brancg into the current branch.</li>
+            </ul>
+            <a href="https://www.atlassian.com/git/tutorials/setting-up-a-repository" class="button">Branching</a>
+        </section>
+
+        <section id="contributing" class="section">
+            <h2 class="section-title">Contributing</h2>
+            <p>If you'd like to contribute to a project, fork the repository and submit a pull request with your changes.</p>
+            <a href="https://www.atlassian.com/git/tutorials/using-branches" class="button">Contributing</a>
+        </section>
+
+        <section id="resources" class="section">
+            <h2 class="section-title">Resources</h2>
+            <p>For more information, checkout the following resources:</p>
+            <ul>
+                <li><a href="https://git-scm.com/doc" class="link">Git Documentation</a></li>
+                <li><a href="https://www.atlassian.com/git/tutorials" class="link">Atlassian Git tutorials</a></li>
+            </ul>
+            <a href="https://guides.github.com/activities/forking/" class="button">Resources</a>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <p class="footer">&copy; 2024 Raja Rane I. Mandapat</p>
+    </footer>
+
+    <script>
+        function scrollToSection(sectionID) {
+            const section = document.getElementById(sectionID);
+            section.scrollIntoView({behavior: 'smooth'})
+        }
+    </script>
+</body>
+</html>
